@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const cool = require('cool-ascii-faces');
+
 
 // moteur template
 app.set('view engine' , 'ejs')
@@ -31,7 +31,7 @@ app.get('/blog', function(req , res){
 app.get('/contact', function(req , res){
     res.render('contact')
 })
-app.get('/cool', (req, res) => res.send(cool()))
+
 
 
 app.listen(8080)
